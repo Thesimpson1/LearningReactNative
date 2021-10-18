@@ -1,0 +1,6 @@
+module Pods_LerningReactNative {
+  umbrella header "Pods-LerningReactNative-umbrella.h"
+
+  export *
+  module * { export * }
+}

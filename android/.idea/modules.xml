@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LerningReactNative.iml" filepath="$PROJECT_DIR$/.idea/modules/LerningReactNative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LerningReactNative.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LerningReactNative.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-872789072/LerningReactNative.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/-872789072/LerningReactNative.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2033582151/LerningReactNative.react-native-firebase_auth.iml" filepath="$PROJECT_DIR$/.idea/modules/-2033582151/LerningReactNative.react-native-firebase_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-30609396/LerningReactNative.react-native-firebase_database.iml" filepath="$PROJECT_DIR$/.idea/modules/-30609396/LerningReactNative.react-native-firebase_database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/590281914/LerningReactNative.react-native-firebase_firestore.iml" filepath="$PROJECT_DIR$/.idea/modules/590281914/LerningReactNative.react-native-firebase_firestore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1492975462/LerningReactNative.react-native-google-signin_google-signin.iml" filepath="$PROJECT_DIR$/.idea/modules/1492975462/LerningReactNative.react-native-google-signin_google-signin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1565923175/LerningReactNative.react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1565923175/LerningReactNative.react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1049374390/LerningReactNative.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1049374390/LerningReactNative.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-763733426/LerningReactNative.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-763733426/LerningReactNative.react-native-screens.iml" />
+    </modules>
+  </component>
+</project>

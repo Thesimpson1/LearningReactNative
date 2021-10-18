@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "888446947987",
+    "firebase_url": "https://firstfairbase-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "firstfairbase",
+    "storage_bucket": "firstfairbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888446947987:android:0a85d395b84b16fcd4b366",
+        "android_client_info": {
+          "package_name": "com.lerningreactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888446947987-jtaj5c91ah8intosp0l5ohn89ema1fr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv4SN0bpP5hlUBtQ-feu6BJ5pv4d-Kp-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888446947987-jtaj5c91ah8intosp0l5ohn89ema1fr7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "888446947987-3t3rt4rv3qfl4lrh988uhanjkm1cc385.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.LerningReactNative"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
