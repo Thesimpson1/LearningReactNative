@@ -1,4 +1,4 @@
-#Wed Oct 13 16:39:30 EEST 2021
+#Tue Oct 19 16:11:43 EEST 2021
 path.1=0/classes.dex
 path.0=classes.dex
 renamed.6=classes7.dex
@@ -8,13 +8,13 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.6=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
-base.5=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.4=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
-base.3=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.2=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.1=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
-base.0=/Users/artur/projects/LerningReactNative/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.6=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+base.5=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.4=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+base.3=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
+base.2=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
+base.0=/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.6=classes3.dex
 path.5=classes2.dex
 path.4=4/classes.dex

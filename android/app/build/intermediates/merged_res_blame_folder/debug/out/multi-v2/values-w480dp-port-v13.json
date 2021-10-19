@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/artur/projects/LerningReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
                     "source": "/Users/artur/.gradle/caches/transforms-3/866511df68e462d405d27170975a360c/transformed/material-1.1.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",

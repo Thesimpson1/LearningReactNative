@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/artur/projects/LerningReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "/Users/artur/projects/LearningReactNative/LearningReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "/Users/artur/.gradle/caches/transforms-3/9eba7cef7293f195e486b5c1bb290770/transformed/core-1.5.0/res/values-en-rXC/values-en-rXC.xml",

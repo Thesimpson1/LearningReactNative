@@ -45,6 +45,7 @@ export function* logInSaga() {
         const {idToken} = yield GoogleSignin.signIn();
         const googleCredential = yield auth.GoogleAuthProvider.credential(idToken);
         yield auth().signInWithCredential(googleCredential);
+        console.log(idToken);
         yield call(getCurrentUserSaga);
     } catch (error) {
         yield put(auth_failed_action(error.message));

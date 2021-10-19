@@ -19,6 +19,8 @@ import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
 import io.invertase.firebase.database.ReactNativeFirebaseDatabasePackage;
 // @react-native-firebase/firestore
 import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
+// @react-native-firebase/messaging
+import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 // @react-native-google-signin/google-signin
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
 // react-native-image-picker
@@ -76,6 +78,7 @@ public class PackageList {
       new ReactNativeFirebaseAuthPackage(),
       new ReactNativeFirebaseDatabasePackage(),
       new ReactNativeFirebaseFirestorePackage(),
+      new ReactNativeFirebaseMessagingPackage(),
       new RNGoogleSigninPackage(),
       new ImagePickerPackage(),
       new SafeAreaContextPackage(),

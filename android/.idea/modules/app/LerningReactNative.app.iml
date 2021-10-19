@@ -133,6 +133,7 @@
     <orderEntry type="module" module-name="LerningReactNative.react-native-firebase_auth" />
     <orderEntry type="module" module-name="LerningReactNative.react-native-firebase_database" />
     <orderEntry type="module" module-name="LerningReactNative.react-native-firebase_firestore" />
+    <orderEntry type="module" module-name="LerningReactNative.react-native-firebase_messaging" />
     <orderEntry type="module" module-name="LerningReactNative.react-native-firebase_app" />
     <orderEntry type="module" module-name="LerningReactNative.react-native-screens" />
     <orderEntry type="module" module-name="LerningReactNative.react-native-google-signin_google-signin" />

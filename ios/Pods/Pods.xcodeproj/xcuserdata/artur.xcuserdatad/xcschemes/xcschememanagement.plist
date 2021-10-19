@@ -34,7 +34,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Firebase-Analytics-Auth-Core-CoreOnly-Database-Firestore.xcscheme</key>
+		<key>Firebase-27b21278.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -75,6 +75,11 @@
 			<false/>
 		</dict>
 		<key>FirebaseInstallations.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseMessaging.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -210,6 +215,11 @@
 			<false/>
 		</dict>
 		<key>RNFBFirestore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNFBMessaging.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

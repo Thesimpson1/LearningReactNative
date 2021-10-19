@@ -40,6 +40,7 @@
 		20AD757EF8C1E39112B7EF9E /* Pods-LerningReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LerningReactNative.debug.xcconfig"; path = "Target Support Files/Pods-LerningReactNative/Pods-LerningReactNative.debug.xcconfig"; sourceTree = "<group>"; };
 		2BEB6AC67555B9E825B78096 /* libPods-LerningReactNative-LerningReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LerningReactNative-LerningReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F08763612AF67412C9E1B7 /* Pods-LerningReactNative-LerningReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LerningReactNative-LerningReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-LerningReactNative-LerningReactNativeTests/Pods-LerningReactNative-LerningReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7539BF79271EEA0F00805808 /* LerningReactNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LerningReactNative.entitlements; path = LerningReactNative/LerningReactNative.entitlements; sourceTree = "<group>"; };
 		75967DD0270C6653001C80E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LerningReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95DA3E5CD38AF085F7A9C5E9 /* Pods-LerningReactNative-LerningReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LerningReactNative-LerningReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-LerningReactNative-LerningReactNativeTests/Pods-LerningReactNative-LerningReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		13B07FAE1A68108700A75B9A /* LerningReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				7539BF79271EEA0F00805808 /* LerningReactNative.entitlements */,
 				75967DD0270C6653001C80E3 /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -501,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LerningReactNative/LerningReactNative.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -531,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LerningReactNative/LerningReactNative.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
