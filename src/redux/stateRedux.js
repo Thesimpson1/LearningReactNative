@@ -1,10 +1,13 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {Reducer} from './ReducerToDo.js';
 import createSagaMiddleware from 'redux-saga';
-import {rootSaga} from '../saga/saga';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {ReducerGitUsers} from './ReducerGitUsers';
 import {ReducerAuth} from './ReducerAuth';
+import {all} from "redux-saga/effects";
+import {watchAddTask,  watchLoadTask,  watchRemoveTask, watchUpdateTask} from "../saga/TaskSaga";
+import {watchAddUsers, watchSearchingUsers} from "../saga/UsersSaga";
+import {watchCurrentUser, watchLogIn, watchLogOut} from "../saga/AuthSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 const rootReducer = combineReducers({
@@ -13,7 +16,21 @@ const rootReducer = combineReducers({
   auth: ReducerAuth,
 });
 export const state = createStore(
-  rootReducer,
-  composeWithDevTools(applyMiddleware(sagaMiddleware)),
+    rootReducer,
+    composeWithDevTools(applyMiddleware(sagaMiddleware)),
 );
+export function* rootSaga() {
+  yield all([
+    watchAddTask(),
+    watchRemoveTask(),
+    watchAddUsers(),
+    watchSearchingUsers(),
+    watchLoadTask(),
+    watchCurrentUser(),
+    watchLogOut(),
+    watchLogIn(),
+    watchUpdateTask(),
+  ]);
+}
+
 sagaMiddleware.run(rootSaga);

@@ -1,12 +1,13 @@
 import {
   FETCH_TASKS_SUCCESS,
   FETCH_TASKS_FAILED,
-  CHANGES_SAVED_SUCCESS,
+  IS_LOADING, IS_SHOW_CHANGING_MESSAGE,
 } from './index';
 const initialState = {
   task: [],
   errorMessage: '',
-  isChangesSaved: false,
+  isShowChangingMessage: false,
+  changingMessage: '',
 };
 
 export const Reducer = (state = initialState, action) => {
@@ -22,12 +23,12 @@ export const Reducer = (state = initialState, action) => {
         ...state,
         errorMessage: action.error,
       };
-    case CHANGES_SAVED_SUCCESS:
+    case IS_SHOW_CHANGING_MESSAGE:
       return {
         ...state,
         isChangesSaved: action.boolean,
+        changingMessage: action.message,
       };
-
     default:
       return state;
   }

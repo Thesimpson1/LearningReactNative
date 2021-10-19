@@ -11,6 +11,7 @@ import {useDispatch, useSelector} from 'react-redux';
 
 const Popup = () => {
   const isChangesSaved = useSelector(state => state.toDo.isChangesSaved);
+  const changingMessage = useSelector(state => state.toDo.changingMessage);
   const marginValue = React.useRef(new Animated.Value(-750)).current;
 
   const setDownAnimation = () => {
@@ -41,7 +42,7 @@ const Popup = () => {
             bottom: marginValue,
           },
         ]}>
-        <Text style={styles.textPopup}>Changes Saved</Text>
+        <Text style={styles.textPopup}>{changingMessage}</Text>
       </Animated.View>
     </SafeAreaView>
   );

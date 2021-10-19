@@ -15,8 +15,7 @@ import {
   GET_CURRENT_USER,
   LOG_OUT_USER,
   LOG_OUT_USER_SUCCESS,
-  LOG_IN_USER_SUCCESS,
-  LOG_IN_USER, CHANGES_SAVED_SUCCESS, FETCH_TASK_UPDATE,
+  LOG_IN_USER, FETCH_TASK_UPDATE, IS_SHOW_CHANGING_MESSAGE,
 } from './index';
 export const isLoading_action = isLoading => ({type: IS_LOADING, isLoading});
 
@@ -39,9 +38,10 @@ export const get_user_action = () => ({type: GET_CURRENT_USER});
 export const log_out_action = () => ({type: LOG_OUT_USER});
 export const log_out_action_success = () => ({type: LOG_OUT_USER_SUCCESS});
 export const log_in_action = () => ({type: LOG_IN_USER});
-export const log_in_action_success = () => ({type: LOG_IN_USER_SUCCESS});
+
 export const get_current_user_action_success = currentUser => ({type: GET_CURRENT_USER_SUCCESS, currentUser});
 export const auth_failed_action = error => ({type: AUTH_FAILED, error});
 
-export const changes_saved_action_success = boolean => ({type: CHANGES_SAVED_SUCCESS, boolean});
-export const delay = (ms) => new Promise(res => setTimeout(res, ms));
+
+export const isShowChangingMessage = (boolean,message) => ({type: IS_SHOW_CHANGING_MESSAGE, boolean, message});
+
