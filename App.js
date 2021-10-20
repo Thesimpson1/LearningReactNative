@@ -1,11 +1,13 @@
 import React from 'react';
 import {StyleSheet, Button} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer,useNavigation} from '@react-navigation/native';
 import {Provider} from 'react-redux';
 import {state} from './src/redux/stateRedux';
 import AppScreen from './src/screens/AppScreen';
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {createBottomTabNavigator, } from "@react-navigation/bottom-tabs";
 import messaging from "@react-native-firebase/messaging";
+import UsersScreen from "./src/screens/UsersScreen";
+
 
 XMLHttpRequest = GLOBAL.originalXMLHttpRequest
   ? GLOBAL.originalXMLHttpRequest
@@ -15,6 +17,7 @@ messaging().setBackgroundMessageHandler(async remoteMessage => {
 });
 
 const App = () => {
+
   return (
     <NavigationContainer>
       <Provider store={state}>

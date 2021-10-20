@@ -15,11 +15,13 @@ import User from '../components/User';
 import Preloader from '../helpers/Preloader';
 import Search from '../components/Search';
 
-const UsersScreen = () => {
+
+const UsersScreen = ({navigation}) => {
   const dispatch = useDispatch();
   const users = useSelector(state => state.users.users);
   const isLoading = useSelector(state => state.users.isLoading);
   const someError = useSelector(state => state.users.errorMessage);
+
 
   React.useEffect(() => {
     dispatch(add_users_action());

@@ -7,8 +7,10 @@ import firestore from '@react-native-firebase/firestore';
 import TaskForm from '../components/TaskForm';
 import {SwipeListView} from 'react-native-swipe-list-view';
 import Popup from '../components/Popup';
+import messaging from "@react-native-firebase/messaging";
+import UsersScreen from "./UsersScreen";
 
-const MainScreenToDo = () => {
+const MainScreenToDo = ({navigation}) => {
   const dispatch = useDispatch();
   React.useEffect(() => {
     const subscriber = firestore()
@@ -51,6 +53,15 @@ const MainScreenToDo = () => {
     }
   };
 
+  React.useEffect(() => {
+    messaging().onNotificationOpenedApp(remoteMessage => {
+      console.log(
+          'Notification caused app to open from background state:',
+          UsersScreen
+      );
+      navigation.navigate("Request");
+    });
+  });
   return (
     <SafeAreaView>
       <Text style={styles.head}>Todo List</Text>
