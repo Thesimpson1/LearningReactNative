@@ -1,7 +1,12 @@
 import {call, put, takeEvery} from "redux-saga/effects";
-import {GET_CURRENT_USER, LOG_IN_USER, LOG_OUT_USER} from "../redux";
+import {GET_CAME_USER, GET_CURRENT_USER, LOG_IN_USER, LOG_OUT_USER} from "../redux";
 import {GoogleSignin} from "@react-native-google-signin/google-signin";
-import {auth_failed_action, get_current_user_action_success, log_out_action_success} from "../redux/actions";
+import {
+    auth_failed_action,
+    get_came_user_success_action,
+    get_current_user_action_success,
+    log_out_action_success
+} from "../redux/actions";
 import auth from "@react-native-firebase/auth";
 
 
@@ -13,8 +18,17 @@ export function* watchLogIn() {
 }
 export function* watchCurrentUser() {
     yield takeEvery(GET_CURRENT_USER, getCurrentUserSaga);
+}export function* watchCameUser() {
+    yield takeEvery(GET_CAME_USER, getCameUser);
 }
 
+export function* getCameUser(action) {
+    try {
+        yield put(get_came_user_success_action(action.name));
+    } catch (error) {
+        yield put(auth_failed_action(error.message));
+    }
+}
 export function* logOutSaga() {
     try {
         yield GoogleSignin.signOut();

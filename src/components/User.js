@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import {View, Text, StyleSheet, Button, Image} from 'react-native';
-import {useDispatch} from 'react-redux';
+import {View, Text, StyleSheet, Button, Image} from "react-native";
+import {useDispatch} from "react-redux";
 
 const User = ({login, id, gitHub, avatar}) => {
   const dispatch = useDispatch();
@@ -23,19 +23,19 @@ const User = ({login, id, gitHub, avatar}) => {
 };
 const styles = StyleSheet.create({
   mainStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    backgroundColor: 'rgb(0,220,255)',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    backgroundColor: "rgb(0,220,255)",
     borderWidth: 1,
     marginTop: 5,
   },
   taskStyle: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   completeStyle: {
-    textDecorationLine: 'line-through',
-    alignSelf: 'center',
+    textDecorationLine: "line-through",
+    alignSelf: "center",
   },
   tinyLogo: {
     width: 50,

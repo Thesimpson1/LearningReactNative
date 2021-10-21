@@ -15,8 +15,8 @@ import {
   GET_CURRENT_USER,
   LOG_OUT_USER,
   LOG_OUT_USER_SUCCESS,
-  LOG_IN_USER, FETCH_TASK_UPDATE, IS_SHOW_CHANGING_MESSAGE,
-} from './index';
+  LOG_IN_USER, FETCH_TASK_UPDATE, IS_SHOW_CHANGING_MESSAGE, GET_CAME_USER, GET_CAME_USER_SUCCESS,
+} from "./index";
 export const isLoading_action = isLoading => ({type: IS_LOADING, isLoading});
 
 export const load_task_action = value => ({type: FETCH_TASKS, value});
@@ -38,6 +38,9 @@ export const get_user_action = () => ({type: GET_CURRENT_USER});
 export const log_out_action = () => ({type: LOG_OUT_USER});
 export const log_out_action_success = () => ({type: LOG_OUT_USER_SUCCESS});
 export const log_in_action = () => ({type: LOG_IN_USER});
+export const get_came_user_action = name => ({type: GET_CAME_USER, name});
+export const get_came_user_success_action = name => ({type: GET_CAME_USER_SUCCESS, name});
+
 
 export const get_current_user_action_success = currentUser => ({type: GET_CURRENT_USER_SUCCESS, currentUser});
 export const auth_failed_action = error => ({type: AUTH_FAILED, error});

@@ -7,7 +7,7 @@ import {ReducerAuth} from './ReducerAuth';
 import {all} from "redux-saga/effects";
 import {watchAddTask,  watchLoadTask,  watchRemoveTask, watchUpdateTask} from "../saga/TaskSaga";
 import {watchAddUsers, watchSearchingUsers} from "../saga/UsersSaga";
-import {watchCurrentUser, watchLogIn, watchLogOut} from "../saga/AuthSaga";
+import {watchCameUser, watchCurrentUser, watchLogIn, watchLogOut} from "../saga/AuthSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 const rootReducer = combineReducers({
@@ -30,6 +30,7 @@ export function* rootSaga() {
     watchLogOut(),
     watchLogIn(),
     watchUpdateTask(),
+    watchCameUser(),
   ]);
 }
 

@@ -10,6 +10,7 @@ const initialState = {
   users: [],
   isLoading: false,
   errorMessage: '',
+
 };
 
 export const ReducerGitUsers = (state = initialState, action) => {

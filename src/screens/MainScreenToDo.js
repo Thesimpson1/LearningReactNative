@@ -1,12 +1,12 @@
-import React from 'react';
-import {Text, StyleSheet, SafeAreaView, View, Dimensions} from 'react-native';
-import {load_task_action, remove_task_action} from '../redux/actions';
-import {useDispatch, useSelector} from 'react-redux';
-import Task from '../components/Task';
-import firestore from '@react-native-firebase/firestore';
-import TaskForm from '../components/TaskForm';
-import {SwipeListView} from 'react-native-swipe-list-view';
-import Popup from '../components/Popup';
+import React from "react";
+import {Text, StyleSheet, SafeAreaView, View, Dimensions} from "react-native";
+import {get_came_user_action, load_task_action, remove_task_action} from "../redux/actions";
+import {useDispatch, useSelector} from "react-redux";
+import Task from "../components/Task";
+import firestore from "@react-native-firebase/firestore";
+import TaskForm from "../components/TaskForm";
+import {SwipeListView} from "react-native-swipe-list-view";
+import Popup from "../components/Popup";
 import messaging from "@react-native-firebase/messaging";
 import UsersScreen from "./UsersScreen";
 
@@ -14,7 +14,7 @@ const MainScreenToDo = ({navigation}) => {
   const dispatch = useDispatch();
   React.useEffect(() => {
     const subscriber = firestore()
-      .collection('tasks')
+      .collection("tasks")
       .onSnapshot(querySnapshot => {
         const tasks = [];
         querySnapshot.forEach(documentSnapshot => {
@@ -28,6 +28,13 @@ const MainScreenToDo = ({navigation}) => {
 
     return () => subscriber();
   }, []);
+  React.useEffect(() => {
+    messaging().onNotificationOpenedApp(remoteMessage => {
+      dispatch(get_came_user_action(remoteMessage.notification.title));
+      navigation.navigate("Request");
+    });
+  });
+
   const task = useSelector(state => state.toDo.task);
 
   const renderItem = ({item}) => (
@@ -48,20 +55,12 @@ const MainScreenToDo = ({navigation}) => {
   );
   const onSwipeValueChange = swipeData => {
     const {key, value} = swipeData;
-    if (value < -Dimensions.get('window').width) {
+    if (value < -Dimensions.get("window").width) {
       dispatch(remove_task_action(key));
     }
   };
 
-  React.useEffect(() => {
-    messaging().onNotificationOpenedApp(remoteMessage => {
-      console.log(
-          'Notification caused app to open from background state:',
-          UsersScreen
-      );
-      navigation.navigate("Request");
-    });
-  });
+
   return (
     <SafeAreaView>
       <Text style={styles.head}>Todo List</Text>
@@ -72,7 +71,7 @@ const MainScreenToDo = ({navigation}) => {
         data={task}
         renderItem={renderItem}
         renderHiddenItem={renderHiddenItem}
-        rightOpenValue={-Dimensions.get('window').width}
+        rightOpenValue={-Dimensions.get("window").width}
         onSwipeValueChange={onSwipeValueChange}
         useNativeDriver={false}
       />
@@ -82,34 +81,34 @@ const MainScreenToDo = ({navigation}) => {
 };
 const styles = StyleSheet.create({
   head: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 18,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 10,
   },
   rowBack: {
-    alignItems: 'center',
-    backgroundColor: 'red',
+    alignItems: "center",
+    backgroundColor: "red",
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     paddingLeft: 15,
     marginTop: 5,
   },
   backRightBtn: {
-    alignItems: 'center',
+    alignItems: "center",
     bottom: 0,
-    justifyContent: 'center',
-    position: 'absolute',
+    justifyContent: "center",
+    position: "absolute",
     top: 0,
     width: 75,
   },
   backRightBtnRight: {
-    backgroundColor: 'red',
+    backgroundColor: "red",
     right: 0,
   },
   backTextWhite: {
-    color: '#FFF',
+    color: "#FFF",
   },
 });
 export default MainScreenToDo;
