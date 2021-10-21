@@ -8,7 +8,6 @@ import TaskForm from "../components/TaskForm";
 import {SwipeListView} from "react-native-swipe-list-view";
 import Popup from "../components/Popup";
 import messaging from "@react-native-firebase/messaging";
-import UsersScreen from "./UsersScreen";
 
 const MainScreenToDo = ({navigation}) => {
   const dispatch = useDispatch();

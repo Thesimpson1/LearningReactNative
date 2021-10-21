@@ -52,9 +52,9 @@ export function* logInSaga() {
     try {
         yield GoogleSignin.configure({
             iosClientId:
-                '888446947987-3t3rt4rv3qfl4lrh988uhanjkm1cc385.apps.googleusercontent.com',
+                "888446947987-3t3rt4rv3qfl4lrh988uhanjkm1cc385.apps.googleusercontent.com",
             webClientId:
-                '888446947987-jtaj5c91ah8intosp0l5ohn89ema1fr7.apps.googleusercontent.com',
+                "888446947987-jtaj5c91ah8intosp0l5ohn89ema1fr7.apps.googleusercontent.com",
         });
         const {idToken} = yield GoogleSignin.signIn();
         const googleCredential = yield auth.GoogleAuthProvider.credential(idToken);
