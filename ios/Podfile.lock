@@ -876,6 +876,11 @@ PODS:
   - RNGoogleSignin (7.0.1):
     - GoogleSignIn (~> 6.0.0)
     - React-Core
+  - RNNotifee (3.0.2):
+    - React-Core
+    - RNNotifee/NotifeeCore (= 3.0.2)
+  - RNNotifee/NotifeeCore (3.0.2):
+    - React-Core
   - RNScreens (3.8.0):
     - React-Core
     - React-RCTImage
@@ -946,6 +951,7 @@ DEPENDENCIES:
   - "RNFBFirestore (from `../node_modules/@react-native-firebase/firestore`)"
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
+  - "RNNotifee (from `../node_modules/@notifee/react-native`)"
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -1064,6 +1070,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/messaging"
   RNGoogleSignin:
     :path: "../node_modules/@react-native-google-signin/google-signin"
+  RNNotifee:
+    :path: "../node_modules/@notifee/react-native"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -1143,6 +1151,7 @@ SPEC CHECKSUMS:
   RNFBFirestore: e4f8bad2014105cfcfe7be5c4b6cd5a6fb4af2e7
   RNFBMessaging: 9c1cdb63869ea86f6015c4512d57ab3872df97b7
   RNGoogleSignin: a51c9c7419262c75748ddcee3f735bb42da5def1
+  RNNotifee: 9e7821dca62743c7620e768c67e79e3814191906
   RNScreens: 6e1ea5787989f92b0671049b808aef64fa1ef98c
   Yoga: c11abbf5809216c91fcd62f5571078b83d9b6720
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
